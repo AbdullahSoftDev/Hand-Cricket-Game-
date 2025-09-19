@@ -1,0 +1,62 @@
+This assembly language code, written for the Irvine32 library, implements a "Hand Cricket" game. The program simulates a two-player cricket match where the user plays against the computer.
+
+Key Features and Logic
+Game Introduction: The game begins with a welcome message and credits to the creators, "Abdullah Ghazi-196", "Muhammad Abdullah-161", and "Badar Khalid-192".
+
+Input and Initialization:
+
+The program prompts the user to enter the number of overs for the match.
+
+It validates the input, ensuring the user enters a number greater than zero.
+
+It calculates the total number of balls (overs * 6) and initializes score variables (v, v1, v2, v3) to zero.
+
+Coin Toss:
+
+A random number (0 or 1) is generated to simulate a coin toss.
+
+The user is asked to choose "heads" (1) or "tails" (0).
+
+Based on the toss result, the game proceeds to either the player's batting or bowling phase.
+
+Batting Phase:
+
+Player's Turn: The player's turn is implemented within the batting procedure.
+
+The player enters a number (1-10) to bat.
+
+The computer's "ball" is a randomly generated number (1-10).
+
+If the numbers match, the player is declared "out," and their turn ends.
+
+If the numbers don't match, the player's number is added to their total score.
+
+The program displays the computer's play, the number of balls left, and the player's total score after each "ball."
+
+Bowling Phase:
+
+Player's Turn: This phase is handled in the bowling procedure if the player loses the toss or after their batting turn.
+
+The player enters a number (1-10) to "bowl."
+
+The computer's "batting" number is a randomly generated number.
+
+If the numbers match, the computer is "out," and its turn ends.
+
+If the numbers don't match, the computer's score is updated.
+
+The program displays the computer's "batting" number, the balls left, and the computer's total score.
+
+Game Outcome:
+
+After both turns are complete, the program compares the final scores.
+
+It displays both the player's and the computer's final scores.
+
+It declares the winner ("Hurraahhhh :)! You won!") or the loser ("Alas :( You lost!") based on the final scores.
+
+Replay Option:
+
+The game ends by asking the user if they want to play again (y/n).
+
+If the user enters 'y', the program jumps back to the main loop (main1), allowing for a new game. Otherwise, it exits.
